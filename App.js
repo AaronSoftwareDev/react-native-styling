@@ -1,12 +1,23 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { View, StyleSheet,Text, SafeAreaView, ScrollView } from 'react-native'
+import React from 'react'
+import StylishCards from './components/StylishCards'
+import ShadowCard from './components/ShadowCard'
+import FlatCards from './components/FlatCards'
+import ActivityCard from './components/ActivityCard'
+
+
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView>
+    <ScrollView>
+      <StylishCards />
+      <ShadowCard/>
+     
+      <FlatCards/>
+      <ActivityCard />
+    </ScrollView>
+  </SafeAreaView>
   );
 }
 
